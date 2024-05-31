@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.slider {
+    overflow: hidden;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #ddd;
+    box-sizing: border-box;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(100% * 6);
+    animation: scroll 12s linear infinite;
+}
+
+.slide {
+    flex: 1 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    width: 300px;  
+    height: 200px;
+    object-fit: cover;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.text-block {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.text-block p {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
